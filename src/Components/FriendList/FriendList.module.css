@@ -1,0 +1,28 @@
+.friendList {
+  list-style: none;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.status {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+}
+
+.offLine {
+  composes: status;
+  background-color: red;
+}
+.isOnline {
+  composes: status;
+  background-color: greenyellow;
+}
