@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Profile.module.css"
+import defImg from "./def.img.svg"
 const Profile = ({
   name,
   tag,
@@ -12,7 +13,7 @@ const Profile = ({
     <div className={styles.description}>
       <img src={avatar} alt="Аватар пользователя" className={styles.avatar} width="280" />
       <p className={styles.name}>{name}</p>
-      <p className={styles.tag}>{tag}</p>
+      <p className={styles.tag}>@{tag}</p>
       <p className={styles.location}>{location}</p>
     </div>
 
@@ -34,7 +35,7 @@ const Profile = ({
 );
 
 Profile.defaultProps = {
-  avatar: "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg",
+  avatar: defImg,
 };
 
 Profile.propTypes = {
